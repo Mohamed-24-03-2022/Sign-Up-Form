@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Sign-Up-Form</title>
+  </head>
+  <body>
+    <section class="left-side-section">
+      <div class="logo-container">
+        <img class="logo" src="./resources/odin-lined.png" alt="odin-logo" />
+        <p>Odin</p>
+      </div>
+    </section>
+
+    
+    <section class="right-side-section">
+        
+      <div class="text-container">
+        <p>
+          This is a demo registration page! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+
+      <div class="form-container">
+          <form action="/" method="post">
+            <div class="form-content">
+                <div class="inputs-container">
+                  <p>Let's do this!</p>
+                  <div class="row">
+                    <div class="first-column">
+                      <label for="first-name">FIRST NAME*</label>
+                      <input class="input" type="text" name="first-name" required />
+                      <label for="email">EMAIL*</label>
+                      <input class="input" type="email" name="email" required />
+                      <label for="password">PASSWORD*</label>
+                      <input class="input" type="password" name="password" required />
+                    </div>
+                    <div class="second-column">
+                      <label for="last-name">LAST NAME*</label>
+                      <input class="input" type="text" name="last-name" required />
+                      <label for="phone-number">PHONE NUMBER</label>
+                      <input class="input" type="tel" name="phone-number" />
+                      <label for="password-confirmation">CONFIRM PASSWORD*</label>
+                      <input
+                        class="input"
+                        type="password"
+                        name="password-confirmation"
+                        required/>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button type="submit">Create Account</button>
+                  <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+          </form>
+      </div>
+
+
+    </section>
+  </body>
+</html>
