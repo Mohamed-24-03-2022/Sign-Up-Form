@@ -51,6 +51,10 @@ passwordInputs[1].addEventListener("input", () => {
     }
 });
 
+signUpButton.addEventListener("click", (e) => {
+    e.preventDefault();
+});
+
 
 
 
