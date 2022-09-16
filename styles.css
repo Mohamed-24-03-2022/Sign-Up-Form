@@ -97,16 +97,17 @@ body {
 }
 .inputs-container .row {
   display: flex;
-  gap: 10%;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
+  gap: 15%;
+  width: 100%;
 }
-.first-column,
-.second-column {
-  width: 50%;
+.inputs-container .row div {
+  width: 40%;
 }
-.first-column p,
-.second-column p {
+.password-container p,
+.password-confirmation-container p {
   font-size: 0.8rem;
   font-weight: normal;
   color: #ce6060;
@@ -204,7 +205,11 @@ body {
   .logo-container {
     top: 0;
   }
-  .left-side-section p {
+  .credibility {
+    background-color: #00000078;
+    width: 100%;
+  }
+  .credibility p {
     font-size: 14px;
   }
   .right-side-section {
@@ -228,13 +233,11 @@ body {
     margin: 0;
   }
   .inputs-container .row {
-    gap: 0px;
+    gap: 10px;
     flex-direction: column;
   }
-
-  .first-column,
-  .second-column {
-    margin: 0 auto;
+  .inputs-container .row div {
+    width: 50%;
   }
   .input {
     width: 100%;
