@@ -15,7 +15,11 @@ body {
   height: 100%;
   display: flex;
 }
-
+.fab,
+a {
+  user-select: none;
+  -webkit-user-drag: none;
+}
 /*********** left-side-section ***********/
 .left-side-section {
   font-family: "Norse-Bold";
@@ -107,11 +111,13 @@ body {
   width: 40%;
 }
 .password-container p,
-.password-confirmation-container p {
+.password-confirmation-container p,
+.tel-container p {
   font-size: 0.8rem;
   font-weight: normal;
   color: #ce6060;
   padding: 0;
+  margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -138,6 +144,9 @@ body {
   background-color: #d7d7d737;
 }
 .input[type="password"] {
+  margin-bottom: 0;
+}
+.input[type="tel"] {
   margin-bottom: 0;
 }
 .input:focus {
@@ -204,6 +213,7 @@ body {
   }
   .logo-container {
     top: 0;
+    flex-direction: column;
   }
   .credibility {
     background-color: #00000078;
